@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#burgerIcon {
+    transition: transform 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-wp {
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    transform: translateY(50%);
+    background-color: #03c100;
+    border-radius: 10px 0px 0px 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.fa-whatsapp {
+    color: #ffffff;
+}
+
+.back-blue {
+    background-color: #2E4985;
+    color: #ffffff
+}
+
+.back-white {
+    background-color: #ffffff;
+    color: #2E4985;
+    border: 2px solid #2E4985;
+}
+
+.color-blue {
+    color: #2E4985;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.disp-inline {
+    display: inline-block;
+}
+
+.btn-p {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-height: 50px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.back-black {
+    background-color: #545b65;
+    color: #ffffff;
+}
+
+.back-white {
+    background-color: #ffffff;
+}
+
+.back-blue-pure {
+    background-color: #2E4985;
+}
+
+
+.back-red {
+    background-color: #e6506b;
+    color: #ffffff;
+}
+
+.bg-dark {
+    background-color: #2e6bee;
+}
+
+.back-green {
+    background-color: #6fce68;
+    color: #ffffff;
+}
+
+.back-blue-plan {
+    background-color: #2e6bee;
+    color: #ffffff;
+}
+
+.flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.subtitle {
+    font-size: 28px;
+}
+
+.text-center {
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
+
+$flex-evenly-center: (
+    justify: space-evenly,
+    align: center
+);
+
+@mixin flexbox ($horizontal, $direccion) {
+    display: flex;
+    justify-content: $horizontal;
+    flex-direction: $direccion;
+}
